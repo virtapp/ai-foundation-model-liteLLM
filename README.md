@@ -2,7 +2,7 @@
 
 
 ## Kubernetes AI Foundation LiteLLM | ☸️
-Application definitions, configurations, and environments should be declarative and version controlled. Application deployment and lifecycle management should be automated, auditable, and easy to manage
+Call all LLM APIs using the OpenAI format [Bedrock, Huggingface, VertexAI, TogetherAI, Azure, OpenAI, Groq etc.] 
 
 🎯 Features
 ```
@@ -16,8 +16,19 @@ Application definitions, configurations, and environments should be declarative 
 🔨 Example : 
 
 ```
-terraform init
-terraform validate
-terraform plan -var-file="template.tfvars"
-terraform apply -var-file="template.tfvars" -auto-approve
+from litellm import completion
+import os
+
+## set ENV variables
+os.environ["OPENAI_API_KEY"] = "your-openai-key"
+os.environ["ANTHROPIC_API_KEY"] = "your-anthropic-key"
+
+messages = [{ "content": "Hello, how are you?","role": "user"}]
+
+# openai call
+response = completion(model="openai/gpt-4o", messages=messages)
+
+# anthropic call
+response = completion(model="anthropic/claude-sonnet-4-20250514", messages=messages)
+print(response)
 ---
