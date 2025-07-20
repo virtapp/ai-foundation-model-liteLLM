@@ -1,5 +1,4 @@
-<img width="302" height="167" alt="images" src="https://github.com/user-attachments/assets/33bb1476-f9f5-4c1a-8a1d-cd8611e18c19" />
-
+<img width="960" height="532" alt="460220361-eb67af3c-6496-4ac6-9b2e-858c917ffbb8" src="https://github.com/user-attachments/assets/b1ddcc59-ca08-4c17-bb55-27645e55cf2f" />
 
 
 ## Foundation LiteLLM | 🚀🚀🚀 
