@@ -6,36 +6,39 @@ Call all LLM APIs using the OpenAI format [Bedrock, Huggingface, VertexAI, Toget
 
 🎯 Features
 ```
-    Security
-        ✅ SSO for Admin UI
-        ✅ Audit Logs with retention policy
-        ✅ JWT-Auth
-        ✅ Control available public, private routes (Restrict certain endpoints on proxy)
-        ✅ Control available public, private routes
-        ✅ Secret Managers - AWS Key Manager, Google Secret Manager, Azure Key, Hashicorp Vault
-        ✅ [BETA] AWS Key Manager v2 - Key Decryption
-        ✅ IP address‑based access control lists
-        ✅ Track Request IP Address
-        ✅ Use LiteLLM keys/authentication on Pass Through Endpoints
-        ✅ Set Max Request Size / File Size on Requests
-        ✅ Enforce Required Params for LLM Requests (ex. Reject requests missing ["metadata"]["generation_name"])
-        ✅ Key Rotations
-    Customize Logging, Guardrails, Caching per project
-        ✅ Team Based Logging - Allow each team to use their own Langfuse Project / custom callbacks
-        ✅ Disable Logging for a Team - Switch off all logging for a team/project (GDPR Compliance)
-    Spend Tracking & Data Exports
-        ✅ Set USD Budgets Spend for Custom Tags
-        ✅ Set Model budgets for Virtual Keys
-        ✅ Exporting LLM Logs to GCS Bucket, Azure Blob Storage
-        ✅ /spend/report API endpoint
-    Prometheus Metrics
-        ✅ Prometheus Metrics - Num Requests, failures, LLM Provider Outages
-        ✅ x-ratelimit-remaining-requests, x-ratelimit-remaining-tokens for LLM APIs on Prometheus
-    Control Guardrails per API Key
-    Custom Branding
-        ✅ Custom Branding + Routes on Swagger Docs
-        ✅ Public Model Hub
-        ✅ Custom Email Branding
+Security:
+✅ SSO for Admin UI
+✅ Audit Logs with retention policy
+✅ JWT-Auth
+✅ Control available public, private routes (Restrict certain endpoints on proxy)
+✅ Control available public, private routes
+✅ Secret Managers - AWS Key Manager, Google Secret Manager, Azure Key, Hashicorp Vault
+✅ [BETA] AWS Key Manager v2 - Key Decryption
+✅ IP address‑based access control lists
+✅ Track Request IP Address
+✅ Use LiteLLM keys/authentication on Pass Through Endpoints
+✅ Set Max Request Size / File Size on Requests
+✅ Enforce Required Params for LLM Requests (ex. Reject requests missing ["metadata"]["generation_name"])
+✅ Key Rotations
+
+Customize Logging, Guardrails, Caching per project:
+✅ Team Based Logging - Allow each team to use their own Langfuse Project / custom callbacks
+✅ Disable Logging for a Team - Switch off all logging for a team/project (GDPR Compliance)
+
+Spend Tracking & Data Exports
+✅ Set USD Budgets Spend for Custom Tags
+✅ Set Model budgets for Virtual Keys
+✅ Exporting LLM Logs to GCS Bucket, Azure Blob Storage
+✅ /spend/report API endpoint
+
+Prometheus Metrics:
+✅ Prometheus Metrics - Num Requests, failures, LLM Provider Outages
+✅ x-ratelimit-remaining-requests, x-ratelimit-remaining-tokens for LLM APIs on Prometheus
+
+Custom Branding
+✅ Custom Branding + Routes on Swagger Docs
+✅ Public Model Hub
+✅ Custom Email Branding
 ```
 
 🔨 Example : 
